@@ -11,4 +11,5 @@ print('Biased mean', biased_pmf.Mean())
 
 ```
 Unbiased mean 1.024205155043831
+
 Biased mean 2.403679100664282
