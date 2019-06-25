@@ -16,4 +16,4 @@ h2 = h(6,1)
 print(round(100*(dist.cdf(h2) - dist.cdf(h1)),5),"% of men.",sep="")
 
 ```
->0.00103 percent of men.
+>34.27% of men.
