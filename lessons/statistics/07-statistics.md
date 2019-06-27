@@ -95,7 +95,7 @@ How do frequentist and Bayesian statistics compare?
 
 >[xkcd](https://xkcd.com/1132/)
 
->I would say that the frequentist is more of a mathematical mind set that would live and die by what the numbers are able to say, where as the bayesian statistician is more apt to look at the larger picture. in the comic above where the premise is that the sun has exploded, there is a substantially larger unlikelihood of the sun exploding than the detector lying(1/36) or less than the "5%" which is why we're able to distrust the detector. \
+>I would say that the frequentist is more of a mathematical mind set that would live and die by what the numbers are able to say, where as the bayesian statistician is more apt to look at the larger picture. in the comic above where the premise is that the sun has exploded, there is a substantially larger unlikelihood of the sun exploding than the detector lying(1/36) or less than the "5%" which is why we're able to distrust the detector.
 
 
 ---
