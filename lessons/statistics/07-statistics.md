@@ -95,7 +95,7 @@ How do frequentist and Bayesian statistics compare?
 
 >[xkcd](https://xkcd.com/1132/)
 
->I would say that the frequentist is more of a mathematical mind set that would live and die by what the numbers are able to say, where as the bayesian statistician is more apt to look at the larger picture. in the comic above where the premise is that the sun has exploded, there is a substantially larger unlikelihood of the sun exploding than the detector lying(1/36) or less than the "5%" which is why we're able to distrust the detector. 
+>I would say that the frequentist is more of a mathematical mind set that would live and die by what the numbers are able to say, where as the bayesian statistician is more apt to look at the larger picture. in the comic above where the premise is that the sun has exploded, there is a substantially larger unlikelihood of the sun exploding than the detector lying(1/36) or less than the "5%" which is why we're able to distrust the detector.
 
 
 ---
@@ -106,6 +106,8 @@ The following exercises are optional, but we highly encourage you to complete th
 
 ### Q7. [Think Stats Chapter 7 Exercise 1](7-1-weight_vs_age.md) (correlation of weight vs. age)
 In this exercise, you will compute the effect size of correlation.  Correlation measures the relationship of two variables, and data science is about exploring relationships in data.    
+
+*working on this one*
 
 ### Q8. [Think Stats Chapter 8 Exercise 2](8-2-sampling_dist.md) (sampling distribution)
 In the theoretical world, all data related to an experiment or a scientific problem would be available.  In the real world, some subset of that data is available.  This exercise asks you to take samples from an exponential distribution and examine how the standard error and confidence intervals vary with the sample size.
