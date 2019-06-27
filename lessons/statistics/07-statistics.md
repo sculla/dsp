@@ -107,7 +107,56 @@ The following exercises are optional, but we highly encourage you to complete th
 ### Q7. [Think Stats Chapter 7 Exercise 1](7-1-weight_vs_age.md) (correlation of weight vs. age)
 In this exercise, you will compute the effect size of correlation.  Correlation measures the relationship of two variables, and data science is about exploring relationships in data.    
 
-*working on this one*
+```python
+import first
+import pandas as pd
+import seaborn as sns
+from matplotlib import pyplot as plt
+
+#Part 1
+live, firsts, others = first.MakeFrames()
+live = live.dropna(subset=['agepreg', 'totalwgt_lb'])
+sns.scatterplot(live['agepreg'], live['totalwgt_lb'], alpha= .1)
+plt.show()
+
+#Part 2
+bins = np.arange(15,45, 5)
+indices = np.digitize(live['agepreg'], bins)
+groups = live.groupby(indices)
+mean_ages = [group['agepreg'].mean() for i, group in groups]
+cdfs = [thinkstats2.Cdf(group['totalwgt_lb']) for i, group in groups]
+for percent in [75, 50, 25]:
+    weight_percentiles = [cdf.Percentile(percent) for cdf in cdfs]
+    label = '%dth' % percent
+    thinkplot.Plot(mean_ages, weight_percentiles, label=label)
+    
+thinkplot.Config(xlabel='Age (Years)',
+                 ylabel='Weight (kg)',
+                 axis=[13, 42, 6, 9],
+                 legend=False)
+plt.show()
+
+#Part 3
+def Corr(xs, ys):
+    xs = np.asarray(xs)
+    ys = np.asarray(ys)
+
+    meanx, varx = thinkstats2.MeanVar(xs)
+    meany, vary = thinkstats2.MeanVar(ys)
+
+    corr = Cov(xs, ys, meanx, meany) / np.sqrt(varx * vary)
+    return corr
+Corr(live['agepreg'], live['totalwgt_lb']) #0.06883397035410908
+
+#Part 4
+def SpearmanCorr(xs, ys):
+    xranks = pd.Series(xs).rank()
+    yranks = pd.Series(ys).rank()
+    return Corr(xranks, yranks)
+SpearmanCorr(live['agepreg'], live['totalwgt_lb']) #0.09461004109658226
+```
+
+For the correlation, there doesn't seem to be any correlation between the birth weight of a kid and the age of the mother, as all of the percentiles remain around their respective means. along with the further evidence that both the Pierson and Spearman. correlations are relatively close to 0.
 
 ### Q8. [Think Stats Chapter 8 Exercise 2](8-2-sampling_dist.md) (sampling distribution)
 In the theoretical world, all data related to an experiment or a scientific problem would be available.  In the real world, some subset of that data is available.  This exercise asks you to take samples from an exponential distribution and examine how the standard error and confidence intervals vary with the sample size.
