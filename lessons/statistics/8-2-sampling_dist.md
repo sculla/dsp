@@ -18,10 +18,10 @@ def test_1(n= 10, lam= 2, iters= 1000):
     thinkplot.cdf(cdf)
     
     stderr = RMSE(means, lam)
-    print('standard error', stderr)
+    print('standard error', stderr, '  ')
     
     ci = cdf.Percentile(5), cdf.Percentile(95)
-    print('confidence interval', ci)
+    print('confidence interval', ci,'  ')
     VertLine(ci[0])
     VertLine(ci[1])
 
@@ -31,17 +31,17 @@ for i in [3, 10, 100, 1000]:
     print('  \n', end='')
 ````
 n=3  
-standard error 3.5311485561326594
-confidence interval (0.9764365260046396, 7.694862666471172)   
+standard error 2.8232918161730507   
+confidence interval (0.9418029830701925, 7.092994983277239)   
   
 n=10  
-standard error 0.8087884850179061
-confidence interval (1.277934798768846, 3.736784926518717)   
+standard error 0.8364685791127595   
+confidence interval (1.2492321644261226, 3.7452366934033368)   
   
 n=100  
-standard error 0.20525586268562812
-confidence interval (1.7178176583118807, 2.3602714678273022)   
+standard error 0.21544492365186302   
+confidence interval (1.7060184662877274, 2.412960372282922)   
   
 n=1000  
-standard error 0.06491414859677791
-confidence interval (1.9023737207506453, 2.109088766176967)   
+standard error 0.06199602587144626   
+confidence interval (1.9037205485775555, 2.1037960082266665)   
