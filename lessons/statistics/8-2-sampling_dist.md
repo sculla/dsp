@@ -26,22 +26,22 @@ def test_1(n= 10, lam= 2, iters= 1000):
     VertLine(ci[1])
 
 for i in [3, 10, 100, 1000]:
-    print('n={}'.format(i))
+    print('n={}  '.format(i))
     test_1(n= i)
-    print('\n', end='')
+    print('  \n', end='')
 ````
-n=3
-standard error 2.825428157255861
-confidence interval (0.9409235161955197, 7.505511399734731)
-
-n=10
-standard error 0.7945027194615963
-confidence interval (1.253124213628637, 3.5678388761533846)
-
-n=100
-standard error 0.20027348380322235
-confidence interval (1.7140110924224787, 2.355245000005235)
-
-n=1000
-standard error 0.06521099681642716
-confidence interval (1.9067575597888684, 2.1151650744817676)
+n=3  
+standard error 3.5311485561326594
+confidence interval (0.9764365260046396, 7.694862666471172)   
+  
+n=10  
+standard error 0.8087884850179061
+confidence interval (1.277934798768846, 3.736784926518717)   
+  
+n=100  
+standard error 0.20525586268562812
+confidence interval (1.7178176583118807, 2.3602714678273022)   
+  
+n=1000  
+standard error 0.06491414859677791
+confidence interval (1.9023737207506453, 2.109088766176967)   
