@@ -161,9 +161,9 @@ For the correlation, there doesn't seem to be any correlation between the birth 
 ### Q8. [Think Stats Chapter 8 Exercise 2](8-2-sampling_dist.md) (sampling distribution)
 In the theoretical world, all data related to an experiment or a scientific problem would be available.  In the real world, some subset of that data is available.  This exercise asks you to take samples from an exponential distribution and examine how the standard error and confidence intervals vary with the sample size.
 
-### Q9. [Think Stats Chapter 6 Exercise 1](6-1-household_income.md) (skewness of household income)
-### Q10. [Think Stats Chapter 8 Exercise 3](8-3-scoring.md) (scoring)
-### Q11. [Think Stats Chapter 9 Exercise 2](9-2-resampling.md) (resampling)
+### Q9. [Think Stats Chapter 6 Exercise 1](6-1-household_income.md) (skewness of household income).  
+### Q10. [Think Stats Chapter 8 Exercise 3](8-3-scoring.md) (scoring).  
+### Q11. [Think Stats Chapter 9 Exercise 2](9-2-resampling.md) (resampling).  
 
 ---
 
