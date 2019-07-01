@@ -27,8 +27,9 @@ print(PearsonMedianSkewness(sample), 'This also shows a positive Skewed-ness, to
 ```  
 0.7361258019141782 This also shows a positive Skewed-ness, to the left.
 
-m = Mean(sample)
+
 ```python
+m = Mean(sample)
 '{:.2%} of households are below mean income of ${:,.2f}'.format(cdf.Prob(m), m)
 ```
 
